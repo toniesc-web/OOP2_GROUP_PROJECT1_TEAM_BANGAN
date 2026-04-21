@@ -1,0 +1,16 @@
+public class GameManager {
+
+    public void startGame() {
+
+        Player player = new Player("Hero", 100);
+        Enemy enemy = new Enemy("Goblin", 60);
+
+        player.display();
+        enemy.display();
+
+        player.attack(enemy);
+        enemy.attack(player);
+        enemy.defend();
+        player.defend();
+    }
+}
